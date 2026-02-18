@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+    background-color: #050509;
+    color: #e5e7eb;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.04em;
+    font-family: "Clash Display", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+@layer components {
+  .shell-layout {
+    @apply min-h-screen;
+    background-color: #050509;
+    color: #e5e7eb;
+  }
+
+  .shell-main {
+    @apply max-w-6xl mx-auto px-4 py-8;
+  }
+
+  .shell-surface {
+    @apply rounded-2xl border shadow-athlete;
+    border-color: #1f2933;
+    background-color: #0b0b12;
+  }
+
+  .shell-chip {
+    @apply inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium;
+    border-color: #f5d15f;
+    background-color: rgba(59, 48, 20, 0.4);
+    color: #cbd5f5;
+  }
+
+  .shell-link {
+    @apply text-sm font-medium transition-colors;
+    color: #6b7280;
+  }
+
+  .shell-link:hover {
+    color: #f5d15f;
+  }
+
+  .shell-link-active {
+    color: #f5d15f;
+  }
+}
